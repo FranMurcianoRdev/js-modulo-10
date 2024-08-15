@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reseteo.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mortadelo y Filemon</title>
+  </head>
+  <body>
+      <div id="app">
+        <div id="titulo">
+          <h1>Personajes de Mortadelo y Filemón</h1>
+        </div>
+        <div id= "campos" class="campos">
+          <input id="nombre-busqueda" type="text" name="nombre-busqueda" required />
+          <button class="submit" id="btn-filtrar" class="btn-filtrar">Filtrar</button>
+        </div>
+      </div>
+      <div id="contenedor-de-personajes" class="contenedor-de-personajes"></div>
+    <script type="module" src="./listado-personajes.ts"></script>
+  </body>
+</html>

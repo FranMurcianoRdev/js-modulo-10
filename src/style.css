@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+} 
+
+.contenedor-de-personajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 60%; /* Permite que el contenedor se ajuste al ancho de la pantalla */
+}
+
+@media (max-width: 1024px) {
+  .contenedor-de-personajes {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-de-personajes {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+  }
+}
+
+.contenedor-personaje {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 150px; /* Ajusta la altura mínima según tu contenido */
+  text-align: center; /* Centra el texto dentro de cada personaje */
+}
