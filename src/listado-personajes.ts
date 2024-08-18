@@ -60,7 +60,7 @@ const creaContenedorPersonaje = (personaje: Personaje): HTMLDivElement => {
     const elementoPersonaje = document.createElement("div");
     elementoPersonaje.classList.add("contenedor-personaje");
 
-    const imagen = crearElementoImagen(personaje.imagen, personaje.nombre);
+    const imagen = crearElementoImagen(`http://localhost:3000/${personaje.imagen}`, personaje.nombre);
     elementoPersonaje.appendChild(imagen);
 
     const nombre = crearElementoParrafoNombre (personaje.nombre);
